@@ -132,12 +132,11 @@ html, body{
     
     #nav1{
         height: 10%;
-        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
-        font-size: 7px;
+        font-size: 10px;
     
     }
 
@@ -145,15 +144,26 @@ html, body{
         display: none;
     }
 
+    .circle{
+        width: 20px;
+        height: 20px;
+        background-color: #000000;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    
     #nav1-options{
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
     }
     
     #nav1-options #lang{
         display: flex;
-        gap: 3px;
+        gap: 5px;
     }
     
     #nav1-options #lang #lang2{
@@ -163,6 +173,7 @@ html, body{
     #nav2{
         height: 5%;
         display: flex;
+        gap: 80px;
         font-size: 15px;
         padding: 0 15px;
         align-items: center;
@@ -186,19 +197,34 @@ html, body{
         height: 85%;
         width: 100%;
     }
+    
+    #text-content{
+        height: 35%;
+        width: 100%;
+        overflow-x: auto;
+        display: flex;
+        flex-wrap: nowrap;
+    }
 
     .elem{
         height: 100%;
-        width: 130%;
+        width: 140%;
         flex-shrink: 0;
         padding: 40px 20px;
     }
 
     .elem h1{
-        font-size: 15vw;
+        font-size: 18vw;
     }
 
+    #image-content{
+        height: calc(100% - 35% - 4px);
+        width: 100%;
+    }
     #image-content img{
-        object-position: center;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 20%;
     }
 }
